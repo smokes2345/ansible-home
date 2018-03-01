@@ -1,0 +1,7 @@
+---
+- name: deploy resources
+  hosts: all
+
+  roles:
+  - role: audio-gateway
+    when: "'audiogw' in group_names"
